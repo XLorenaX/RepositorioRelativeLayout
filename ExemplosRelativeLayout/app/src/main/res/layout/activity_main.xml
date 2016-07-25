@@ -13,12 +13,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="USUÁRIO: "
-        android:layout_alignParentLeft="true"
-        />
+        android:id="@+id/textusuario"
+        android:layout_alignParentStart="true" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textusuario"
+        android:id="@+id/editText" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SENHA:"
+        android:id="@+id/textSenha"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textSenha"
+        android:layout_alignTop="@+id/textSenha"
+        android:layout_alignStart="@+id/editText"
+        android:id="@+id/editText2" />
 
-
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp" />
 
 </RelativeLayout>
