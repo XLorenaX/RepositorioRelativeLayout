@@ -52,5 +52,19 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+        Btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent geek = new Intent(MainActivity.this, GeekActivity.class);
+                startActivity(geek);
+            }
+        });
+
+
+
+
+
+
     }
 }
