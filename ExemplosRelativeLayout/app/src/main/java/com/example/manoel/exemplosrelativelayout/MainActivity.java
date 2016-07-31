@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     Btn4.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent escrita = new Intent(MainActivity.this, ArteEscrita.class);
+            Intent escrita = new Intent(MainActivity.this, ArteEscritaActivity.class);
             startActivity(escrita);
         }
     });
