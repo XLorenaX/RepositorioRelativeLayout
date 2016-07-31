@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton Btn1 = (ImageButton) findViewById(R.id.img44);
         ImageButton Btn2 = (ImageButton) findViewById(R.id.img10);
         ImageButton Btn3 = (ImageButton) findViewById(R.id.img12);
+        ImageButton Btn4 = (ImageButton) findViewById(R.id.img18);
 
         Btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +62,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+    Btn4.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent escrita = new Intent(MainActivity.this, ArteEscrita.class);
+            startActivity(escrita);
+        }
+    });
 
 
 
